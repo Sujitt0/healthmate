@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medifine</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #f0f4f5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .nav {
+        padding-top: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .nav img {
+        height: 6vh;
+      }
+      .nav-content {
+        display: flex;
+        gap: 3rem;
+      }
+      .nav-content a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+      .nav-content a:hover {
+        text-decoration: none;
+        color: #20bc7e;
+      }
+      .input-card{
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border: 2px solid #dadada;
+        box-shadow: 0px 0px 10px 1px #2c2c2c;
+        border-radius: 10px;
+      }
+      .input-card h2{
+        text-align: center;
+        font-weight: 700;
+      }
+      .input-card label{
+        font-weight: 600;
+      }
+      .input-card input,textarea{
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+      }
+      .input-card textarea{
+        resize: none;
+      }
+      .input-card #btn{
+        background-color: #20bc7e;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+          <img src="./media/images/logo.png" alt="" />
+          <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="input-card">
+        <h2>Contact Form</h2>
+        <label for="">Name</label>
+        <input type="text" name="name" placeholder="Enter your name">
+        <label for="">Email</label>
+        <input type="text" name="email" placeholder="Enter your email">
+        <label for="">Message</label>
+        <textarea name="message" rows="5" cols="33" placeholder="Enter your message"></textarea>
+        <input  id="btn" type="submit">
+      </div>
+    
+</body>
+</html>

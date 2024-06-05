@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifine</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #f0f4f5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .nav {
+        padding-top: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .nav img {
+        height: 6vh;
+      }
+      .nav-content {
+        display: flex;
+        gap: 3rem;
+      }
+      .nav-content a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+      .nav-content a:hover {
+        text-decoration: none;
+        color: #20bc7e;
+      }
+      .content{
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .about-content h1{
+        color: #20bc7e;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .about-content p{
+        font-size: 13px;
+        opacity: .7;
+        font-weight: 700;
+        text-align: center;
+      }
+      .content-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* gap: 10px; */
+      }
+      .content-list .list{
+        padding: 5px 20px;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+      }
+      .content-list .list h2{
+        color: #20bc7e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <img src="./media/images/logo.png" alt="" />
+        <div class="nav-content">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="about-content">
+        <h1>Best and Experienced Faculties</h1>
+        <p>
+          We had bring the best experts Of held to you the best service as
+          possible. We are trying our best to serve the world with our
+          facilities, so that everyone can have a proper medal facility to
+          avail.
+        </p>
+      </div>
+      <div class="content-list">
+        <div class="list">
+          <h2>20+</h2>
+          <h4>Doctors</h4>
+        </div>
+        <div class="list">
+          <h2>5000+</h2>
+          <h4>Customers</h4>
+        </div>
+        <div class="list">
+          <h2>500+</h2>
+          <h4>students</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

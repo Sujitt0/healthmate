@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifine</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f4f5;
+    } 
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+.nav{
+    padding-top: 2vh ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav img{
+    height: 6vh;
+}
+.nav-content{
+    display: flex;
+    gap: 3rem;
+    z-index: 99;
+}
+.nav-content a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.nav-content a:hover{
+    text-decoration: none;
+    color: #20bc7e;
+}
+.content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-content{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.left-content h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.left-content p{
+    font-size: .9rem;
+    opacity: .5;
+}
+.left-content button{
+    height: 2.5rem;
+    width: 50%;
+    background-color: #20bc7e;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+.right-content .img{
+    margin-top: 50px;
+    height: 520px;
+}
+.images .img1{
+    position: absolute;
+    bottom: 120px;
+    right: 680px;
+}
+.images .img2{
+    position: absolute;
+    bottom: 80px;
+    right: 640px;
+}
+.images .img3{
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+    height: 350px;
+    z-index: -99;
+}
+.images .img4{
+    position: absolute;
+    right: 60px;
+    bottom: 35px;
+    height: 300px;
+    z-index: -9;
+}
+.images .img5{
+    position: absolute;
+    right: 500px;
+    bottom: 35px;
+    height: 500px;
+    z-index: -999;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <img src="./media/images/logo.png" alt="" />
+        <div class="nav-content">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+        <div class="images">
+            <img class="img1" src="./media/images/bottomAngle.png" alt="">
+            <img class="img2" src="./media/images/mouse.png" alt="">
+            <img class="img3" src="./media/images/greenBox.png" alt="">
+            <img class="img4" src="./media/images/yellowBox.png" alt="">
+            <img class="img5" src="./media/images/stethoscope.png" alt="">
+        </div>
+      <div class="left-content">
+        <img class="img1" src="./media/images/topAngle.png" alt="">
+        <h2>Complete Health Care Solutions for Everyone</h2>
+        <p>
+          We're always available for our Patents With emergen problems. You can
+          easily reach us 24/7. We focused on highest quality.
+        </p>
+        <button>Make Appointment</button>
+      </div>
+        <div class="right-content">
+            <img class="img" src="./media/images/doctor.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
